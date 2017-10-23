@@ -1,0 +1,41 @@
+# Author: Ratnadeep Bhattacharya
+# License: MIT
+# Version: 2017.1
+
+Dear User,
+
+This utility is completely written in Python with some help from Batch and Bash.
+Ideally it can run on both Windows and Linux machines. For MAC users, this has unfortunately not
+been tested but probably would work. If you test it please drop me a line.
+
+So this utility basically asks for two IPs from you:
+A starting IP
+An ending IP
+
+The utility will generate all the IPs in between automatically. However, that does not mean
+that you should watch out for memory utilisation during scanning a large subnet. Whether you
+scan a 100 IPs or 10,000,000 - the performance should be the same.
+
+At the present time, scanning 10,000,000 IPs may take quite some time though and it is my
+sincere belief that you mostly won't have requirements like that.
+
+Finally, you can provide a custom path where to save the report. If not, the utility will do so on your
+behalf.
+
+########## Requirements: ##########
+For *NIX users:
+	It should run out of the box. Your system mostly has everything.
+For Windows users:
+	You need:
+		1. Python 2.7
+		2. The packages - os, sys, subprocess and re
+		3. The nc.exe is provided with this package
+
+########## What to Expect from Future Versions: ##########
+1. Optimizations to speed up the utility.
+2. A GUI based interface is planned.
+3. A packaging for Windows so that all those painful installations are not required.
+
+P.S. 1 has at least an order of magnitude more priority than 2. The priority for 3 unfortunately is
+even lower. However, the code is open and please feel free to hack away.
+
